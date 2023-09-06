@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Color flipper</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="header__back-link"><img class="header__img" src="img/main/arrow.svg" alt="">вернуться</a>
+                <h4 class="header__title header__title_decor">Color flipper</h4>
+                <!-- <div class="header__name">Color flipper</div> -->
+                <button id="resetBtn" class="btn">Сбросить</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="change-color">
+        <div class="container">
+            <div class="change-color__wrapper">
+                <div class="change-color__inner">
+                    <div class="change-color__text">background-color: 
+                        <span class="change-color__text change-color__text_code">#fff</span>
+                    </div>
+                </div>
+                <button id="changeBtn" class="btn btn_big">Сменить цвет</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/color_flipper.js"></script>
+</body>
+</html>
