@@ -79,13 +79,18 @@ a {
     cursor: pointer;
 
     &_big {
-        //width: 160px;
         height: 50px;
         border: 3px solid #292935;
         background-color: #fff;
         color: #292935;
         font-size: 18px;
         font-weight: 500;
+    }
+    &_fixed {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        margin: 10px;
     }
     &:hover {
         color: #292935;
@@ -115,10 +120,14 @@ a {
     border-radius: 5px;
     background-color: #555450;  
     overflow: hidden;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
     &__img {
         width: 100%;
         height: 180px;
+       
+        & img {
+            width: 100%;
+        }
     }
     &__title {
         width: 100%;
@@ -132,12 +141,11 @@ a {
         padding: 0 20px;
     }
     &:hover {
-        width: 310px;
-        height: 230px;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     }
 }
 
-.change-color {
+.main-block {
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -148,7 +156,7 @@ a {
 
     &__wrapper {
         
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 0;
         right: 0;
@@ -179,5 +187,146 @@ a {
         font-weight: 700;
         line-height: 36px;
         
+    }
+    &__title {
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 64px;
+        height: 100%;
+    }
+    &__like {
+        height: 100%;
+    }
+    &__btn-wrapper {
+        display: flex;
+        position: relative;
+    }
+}
+
+// Counter
+.counter-game {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+    &__wrapper {
+        height: 336px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        color: #292935;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 700;
+
+    }
+
+    &__game-place {
+        display: flex;
+        min-height: 200px;
+    }
+    &__item {
+        position: relative;
+        height: 200px;    
+        margin: 0 20px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        transition: all 0.5s;
+        &_show {
+            justify-content: start;
+        }
+    }
+    &__img {
+        height: 100px;
+    }
+    &__hat {
+        height: 100%;
+        cursor: pointer;
+        
+    }
+
+    &__inner {
+        background-color: #292935;
+        height: 70px;
+        padding: 0 20px;
+        background-color: #292935;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__text {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    &__dollar {
+        width: 40px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -20px;
+        transition: all 0.3s;
+    }
+    
+}
+
+.hidden {
+    display: none;
+}
+
+//animation
+
+.anim {
+    &__plus {
+        position: absolute;
+        top: -50px;
+        left: 22px;
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 64px;
+        color: #a4f7ab;
+        user-select: none;
+        //opacity: 0;
+        //transition: opacity 2s;
+        animation: show 1.3s ease-in 1;
+        animation-fill-mode: forwards;
+        //animation-delay: 1s;
+        &_minus {
+            left: 100px;
+            color: #f07777;
+        }
+    }
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    40%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0);
     }
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Counter</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="header__back-link"><img class="header__img" src="img/main/arrow.svg" alt="">вернуться</a>
+                <h4 class="header__title header__title_decor">Counter</h4>
+                <button id="resetBtn" class="btn">Сбросить</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="counter-game">
+        <div class="container">
+            <div class="counter-game__wrapper">
+                <h2 class="counter-game__title">Раунд: 
+                    <span class="counter-game__title counter-game__title_emphasis">1</span>
+                </h2>
+                <div class="counter-game__game-place">
+                    <div class="counter-game__item">
+                        <div class="counter-game__img">
+                            <img src="img/counter/hat.png" class="counter-game__hat" alt="">
+                        </div>
+                    </div>
+                    <div class="counter-game__item">
+                        <div class="counter-game__img">
+                            <img src="img/counter/hat.png" class="counter-game__hat" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="counter-game__item">
+                        <div class="counter-game__img">
+                            <img src="img/counter/hat.png" class="counter-game__hat" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="counter-game__inner">
+                    <div class="counter-game__text">Кол-во очков: 
+                        <span class="counter-game__text counter-game__text_emphasis">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/hat_game.js"></script>
+</body>
+</html>

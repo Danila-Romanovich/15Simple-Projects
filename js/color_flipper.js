@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const colors = ['skyblue', 'rosybrown', 'rgb(162, 156, 206)', '#f5e1a0', '#cdf5a0', '#a0daf5', '#dab9f8', '#f8b9b9'],
           btnChangeColor = document.querySelector('#changeBtn'),
           btnReset = document.querySelector('#resetBtn'),
-          color = document.querySelector(('.change-color__text_code'));
+          color = document.querySelector(('.main-block__text_code'));
 
     
 

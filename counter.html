@@ -7,33 +7,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Color flipper</title>
+    <title>Counter</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a href="index.html" class="header__back-link"><img class="header__img" src="img/main/arrow.svg" alt="">вернуться</a>
-                <h4 class="header__title header__title_decor">Color flipper</h4>
+                <h4 class="header__title header__title_decor">Counter</h4>
                 <button id="resetBtn" class="btn">Сбросить</button>
             </div>
-            
         </div>
     </header>
 
     <section class="main-block">
-        
         <div class="main-block__wrapper">
-            <div class="main-block__inner">
-                <div class="main-block__text">background-color: 
-                    <span class="main-block__text main-block__text_code">#fff</span>
-                </div>
+            <div class="main-block__title">0</div>
+            <div class="main-block__btn-wrapper">
+                <div class="anim__plus">+</div>
+                <div class="anim__plus anim__plus_minus">-</div>
+                <button data-btntype="incr" class="btn btn_big btn_fixed"><img data-btnType="incr" src="img/counter/like.svg" alt="" class="main-block__like"></button>
+                <button data-btnType="decr" class="btn btn_big btn_fixed"><img data-btnType="decr" src="img/counter/dislike.svg" alt="" class="main-block__like"></button>
             </div>
-            <button id="changeBtn" class="btn btn_big">Сменить цвет</button>
         </div>
-        
     </section>
 
-    <script src="js/color_flipper.js"></script>
+    <script src="js/counter.js"></script>
 </body>
 </html>
